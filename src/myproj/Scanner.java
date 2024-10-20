@@ -85,6 +85,8 @@ public class Scanner {
     private boolean isDigit(char c) {
         return c >= '0' && c <= '9';
     }
+
+    // so far this scans single, double character, and strings, and numbers with/without decimal point
     private void scanToken() {
         char c = advance();
         switch (c) {
